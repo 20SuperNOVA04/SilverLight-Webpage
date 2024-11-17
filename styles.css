@@ -90,7 +90,9 @@ footer a {
     gap: 1rem;
     
 }
+
 .navigation a {
+    text-decoration: none;
     border: #222;
     border-style: solid;
     border-width: 1rem;
@@ -99,10 +101,10 @@ footer a {
     padding: 0.7rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    border: white;
+    border: #999;
     border-style: solid;
     border-radius: 0.5rem;
-    border-width: 0.2rem;
+    border-width: 0.2rem
 }
 
 div.scroll-container {
