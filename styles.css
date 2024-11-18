@@ -9,6 +9,12 @@
     background-position: bottom;
 }
 
+.guide-html-styles {
+    background: url("images_webp/backgrounds/guide.webp") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
 body {
     font-family: Minecraftia;
     margin: 0rem;
