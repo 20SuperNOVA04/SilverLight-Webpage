@@ -27,6 +27,12 @@
     background-size: cover;
 }
 
+.downloads-html-styles {
+    background: url("images_webp/backgrounds/notquiteirish.webp") no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
 
 body {
     font-family: Minecraftia;
@@ -198,6 +204,7 @@ div.scroll-container img {
 
 
 .info-panel img {
+    margin-top: 2rem;
     max-width: 20vw;
     max-height: 30vh;
     border-radius: 0.5rem;
@@ -379,10 +386,6 @@ div.scroll-container img {
     margin: 2%;
 }
 
-.war-panel img {
-    padding-top: 2rem;
-}
-
 .war-panel h1 {
     color: white;
     font-size: 4rem;
@@ -464,4 +467,43 @@ div.scroll-container img {
     font-size: 0.9rem;
     text-align: center;
     margin: 1rem;
+}
+
+.downloads {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15rem;
+}
+
+.downlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 15%;
+}
+.downlinks a {
+    color: black;
+    background-color: white;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    width: 100%;
+    border: 0.2rem solid #222;
+    border-radius: 0.2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.downlinks a:hover {
+    text-decoration: underline;
+}
+
+.downtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    align-items: center;
 }
