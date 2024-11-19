@@ -22,7 +22,7 @@
 }
 
 .war-html-styles {
-    background: url("images_webp/backgrounds/rules-background.webp") no-repeat;
+    background: url("images_webp/backgrounds/war.webp") no-repeat;
     background-position: top;
     background-size: cover;
 }
@@ -33,9 +33,15 @@
     background-size: cover;
 }
 
+.whitelist-html-styles {
+    background: url("images_webp/backgrounds/whitelist.webp") no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
 
 body {
-    font-family: Minecraftia;
+    font-family: Pixelify Sans;
     margin: 0rem;
 }
 
@@ -49,11 +55,9 @@ nav {
     justify-content: space-between;
     gap: 1rem;
     background: transparent;
-    /* opacity: 50%; */
-    padding: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
 }
 
 nav a {
@@ -130,7 +134,8 @@ footer a {
     border: #999;
     border-style: solid;
     border-radius: 0.5rem;
-    border-width: 0.2rem
+    border-width: 0.2rem;
+    font-size: 1.5rem;
 }
 
 .navigation a:hover {
@@ -246,7 +251,7 @@ div.scroll-container img {
     color: white;
     padding: 1rem;
     font-size: 2rem;
-    font-family: Minecraftia;
+    font-family: Pixelify Sans;
     border: none;
     cursor: pointer;
 }
@@ -320,7 +325,8 @@ div.scroll-container img {
 }
 
 .spooky {
-    margin-top: 100rem;
+    margin-top: 400rem;
+    margin-bottom: 10rem;
     gap: 1rem;
 }
 
@@ -388,17 +394,20 @@ div.scroll-container img {
 
 .war-panel h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    text-align: center;
 }
 
 .war-panel h2 {
     color: gold;
     font-size: 3rem;
+    text-align: center;
 }
 
 .war-panel h3 {
     color: white;
     font-size: 2rem;
+    text-align: center;
 }
 
 .war-panels {
@@ -406,7 +415,13 @@ div.scroll-container img {
     justify-content: center;
 }
 
-.sieges-and-wars, .towns-and-capitals, .casus-belli {
+.sieges-and-wars {
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.towns-and-capitals, .casus-belli {
     color: white;
     display: none;
     justify-content: center;
@@ -416,6 +431,7 @@ div.scroll-container img {
     display: flex;
     justify-content: center;
     gap: 3rem;
+    
 }
 
 /* .war-more-info-text */
@@ -424,7 +440,7 @@ div.scroll-container img {
     background: rgba(255, 255, 255, 0);
     border: none;
     color: white;
-    font-family: Minecraftia;
+    font-family: Pixelify Sans;
     text-decoration: underline;
     font-size: 2rem;
 }
@@ -434,37 +450,39 @@ div.scroll-container img {
     flex-direction: column;
     align-items: center;
     max-width: 50%;
+    gap: 0rem;
+    background-color: rgb(0,0,0,0.65);
 }
 
 .war-text-panel h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
 }
 
 .war-text-panel h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .war-text-panel h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     color: gold;
 }
 
 .war-text-panel h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     color: rgb(255, 162, 0);
 }
 
 .war-text-panel h5 {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .war-text-panel h6 {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: 1rem;
 }
@@ -493,6 +511,7 @@ div.scroll-container img {
     border-radius: 0.2rem;
     text-align: center;
     text-decoration: none;
+    font-size: 1.7rem;
 }
 
 .downlinks a:hover {
@@ -506,4 +525,62 @@ div.scroll-container img {
     color: white;
     font-size: 2rem;
     align-items: center;
+}
+
+.mod-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mod-list ul {
+    padding: 0rem;
+    border: 1rem solid rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+.mod-list ul li:nth-child(odd) {
+    background-color: rgba(47, 47, 47, 0.5);
+    list-style-position: inside;
+    list-style: none;
+    text-wrap: wrap;
+}
+
+.mod-list ul li:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+    list-style: none;
+    list-style-position: inside;
+    text-wrap: wrap;
+}
+
+.whitelisted-mods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whitelist-text {
+    flex-direction: column;
+    color: white;
+    gap: 0rem;
+}
+
+.whitelisted-mods h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.whitelisted-mods h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    
+}
+.whitelisted-mods h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
 }
