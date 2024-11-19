@@ -1,7 +1,48 @@
-<html>
+<html class = "war-html-styles">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <title>Silverlight War</title>
+
+        <script>
+            function siegesAndWarFunction() {
+            var x = document.getElementById("mySAW");
+            var y = document.getElementById("myTAC");
+            var z = document.getElementById("myCB");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+                y.style.display = "none";
+                z.style.display = "none";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            function townsAndCapitalsFunction() {
+            var x = document.getElementById("mySAW");
+            var y = document.getElementById("myTAC");
+            var z = document.getElementById("myCB");
+            if (y.style.display === "none") {
+                x.style.display = "none";
+                y.style.display = "flex";
+                z.style.display = "none";
+                } else {
+                    y.style.display = "none";
+                }
+            }
+            function casusBelliFunction() {
+            var x = document.getElementById("mySAW");
+            var y = document.getElementById("myTAC");
+            var z = document.getElementById("myCB");
+            if (z.style.display === "none") {
+                x.style.display = "none";
+                y.style.display = "none";
+                z.style.display = "flex";
+                } else {
+                    z.style.display = "none";
+                }
+            }
+            </script>
+
     </head>
     <body>
         <header>
@@ -17,7 +58,6 @@
                     <a href = "war.html" style="color: white;">War</a>
                     <a href = "downloads.html" style="color: white;">Downloads</a>
                     <a href = "whitelist.html" style="color: white;">Whitelist</a>
-
                     <a href = "https://sites.google.com/view/silverlight7/home" style="color: white;">Ava's Site :D</a>
                 </div>
             </nav>
@@ -25,6 +65,143 @@
         <main>
             <div class = "main-title">
                 <img class = "title-image" src = "images_webp/silverlightseason7.webp" alt = "Silver Light Season 7">
+            </div>
+            <div>
+                <div class = "war-panels">
+                    <div class = "info-panel war-panel">
+                        <img src = "images_webp\generalassets\stage1.webp">
+                        <h1>Stage One</h2>
+                        <h2>The Reasoning</h3>
+                        <h3>A foreign nation provokes or threatens you or your allies...</h3>
+                    </div>
+                    <div class = "info-panel war-panel">
+                        <img src = "images_webp\generalassets\stage2.webp">
+                        <h1>Stage Two</h2>
+                        <h2>The Declaration</h3>
+                        <h3>You declare war on their nation and warn them of the day time and location you will siege their nation.</h3>
+                    </div>
+                    <div class = "info-panel war-panel">
+                        <img src = "images_webp\generalassets\stage3.webp">
+                        <h1>Stage Three</h2>
+                        <h2>The Siege</h3>
+                        <h3>Using powerful cannons, you blow through their defenses, slay their people, and activate their <span style="color: purple;">Desolater</span>, deleting their spawnpoint and securing your victory!</h3>
+                    </div>
+                </div>
+                <div class = "war-more-info">
+                    <div class = "war-more-info-buttons">
+                        <button onclick="siegesAndWarFunction()"><h1>Sieges/War</h1></button>
+                        <button onclick="townsAndCapitalsFunction()"><h1>Towns and Capitals</h1></button>
+                        <button onclick="casusBelliFunction()"><h1>Casus Belli</h1></button>
+                    </div>
+                    <div class = "war-more-info-text">
+                        <div id = "mySAW", class = "sieges-and-wars">
+                            <div class = "war-text-panel">
+                                <h1>Sieges!</h1>
+                                <h5>(please note: if you are still confused after reading please message @AvaAsUsual or an assistant in the Discord!)</h5>
+                                <h3>A siege is an attack on another kingdom's land!</h3>
+                                <h3>During a siege your goal is to break though your enemies defenses, invade their kingdom and destroy their <span style="color: purple;">Desolater</span> (found in the towns tab).</h4>
+
+                                <h1>So It Begins</h1>
+                                <h3>You can declare a war either Mutually or by Casus Bellis.</h3>
+                                <h3>The Time and Location MUST be declared in #wars in Discord.</h3>
+                                <h3>Sieges may only take place on the weekends, but you can declare war at any time!</h3>
+
+                                <h1>Casus Bellis</h1>
+                                <h3>Casus Bellis is "An act or event that is used to provoke or justify a war".</h3>
+                                <h3>There are many reasons to declare a war, all of which can be found at "Casus Belli" tab (right under here!).</h3>
+
+                                <h1>When? Where? Who? What? Whow?</h1>
+                                <h3>No matter the reason, a forced attack may only take place between Friday and Sunday. (or mutually decided to be earlier).</h3>
+                                <h3>No matter what though, the defending party must be warned ahead of time!</h3>
+                                <h3>(time will vary depending on reason, found in "Casus Belli" tab)</h3>
+                                <h3>Any inaction taken before hand will result in a punishment.  After the notice is up a "Siege" may be launched on that day at the decided time.</h3>
+
+                                <h1>Mutual Destruction!</h1>
+                                <h3>A mutually agreed siege date can be arranged between two nations at any time of the week.</h3>
+                                <h4>For this to be a legitimate war, these conditions must be met:</h4>
+                                <h2>• 1 All participating leaders MUST sign a book acknowledging the oncoming war.</h2>
+                                <h2>• 2 All sides must be willing and consenting to go to war on that day/time, tricking players into signing a book is dishonorable and may lead to a ban!</h2>
+
+                                <h1>Rules are.. not meant to be broken?</h1>
+                                <h3>The rules of war are very simple! Be careful and you'll be just fine.</h2>
+                                <h2>• 1 Do not use unrealistic/unfair strategies to get over enemy defenses. (Ladders/Ropes, pillaring, water, etc)</h2>
+                                <h2>• 2 Once you have broken through, you may only break into buildings to retrieve loot or activate the <span style="color: purple;">desolater</span>, please do not attempt to burn down or explode homes.</h2>
+                                <h2>• 3 Make sure you have followed the guidelines.  Thoroughly examine "Sieges" and "Casus Belli" before declaring a war!</h2>
+                                <h3>If any of this is confusing or seems to not be explained enough, please ask an assistant or war councilor for help!</h3>
+
+                                <h1>Reinforcing Reinforced Reinforcements!</h1>
+                                <h3>Normally you could just mine through the walls, but now your enemy will use "Castle Blocks"!</h3>
+                                <h3>These are new powerful bricks that slows down anyone's mining speed who does not own it!  You will want to use explosives to get through these.</h3>
+                                <h3>That's where cannons come in.  Either shot out of a dispenser, or from a ship, cannonballs are powerful tools for blowing down walls!</h3>
+                                <h5>(note: do NOT attempt to destroy buildings with these weapons, only walls or defenses. Any report with proof of someone purposefully griefing a home with cannons will result in a normal punishment ONTOP of breaking the rules of war!)</h5>
+
+                                <h1>There you go!  You're all ready to hack and slash your way to glory, good luck!</h1>
+                            </div>
+                        </div>
+
+                        <div id = "myTAC", class = "towns-and-capitals">
+                            <div class = "war-text-panel">
+                                <h1>Capitals and Towns?</h1>
+                                <h5>(please note: if you are still confused after reading please message @AvaAsUsual or an assistant in the Discord!)</h5>
+                                <h3>Capitals, Towns, and FOB's are three very important names for leaders.</h3>
+                                <h3>These three structure types have great importance to stability and safety to their empire!</h3>
+                                <h1>Town Hall.</h1>
+                                <h3>"Capitals" are the hearts of your nation!  This is your main center point, and what you should aim to defend the most!  The reason you should protect these structures dearly is because they contain your <span style="color: cyan;">"Nation's Honor"</span>.</h3>
+                                <h1>No honor. No glory.</h1>
+                                <h3>Your <span style="color: cyan;">Nation's Honor</span> is a physical item that resigns in your national capital!</h3>
+                                <h3>If this item is captured or destroyed by a foreign nation, your nation is disbanded and all of your assets are converted to the attacking kingdom's property.</h3>
+                                <h6>Congrats!  You have found the hidden message. In order to claim that you have thoroughly read the war rules, please message @AvaAsUsual the word "pineapple".</h6>
+                                <h6>(Please do not share this information with your friends as it could potentially cause them to make a bannable mistake.)</h6>
+                                <h1>Man the deck!</h1>
+                                <h3>The best way to defend your capital aside from physical defenses is a Town!</h3>
+                                <h3>Towns act as a barrier for capitals, if your nation owns a town your capital cannot be attacked until that town is taken over or disbanded!</h3>
+                                <h3>This is not all that Towns are good for though, they are also one of the only ways to set a spawnpoint outside of your capital!</h3>
+                                <h3>This also means that they contain a <span style="color: purple;">"Desolater"</span>. . .</h3>
+                                <h1>Desolator..? That's not a word I love those!!</h1>
+                                <h3>A <span style="color: purple;">desolater</span> is the main target of your enemies in a war.</h3>
+                                <h3>If a <span style="color: purple;">Desolater</span> is activated all spawnpoints of a nation will be set back to their capital!</h3>
+                                <h3>This also means that beds no longer set your spawnpoint, you must set it at your nations capital, FOB, or at a town!</h3>
+                            </div>
+                        </div>
+
+                        <div id = "myCB", class = "casus-belli">
+                            <div class = "war-text-panel">
+                                <h1 style="text-decoration: underline;">Conquest</h1>
+                                <h1 style="color: gold;">4 days notice.</h1>
+                                <h2>The act of taking over nations for the sake of expansion.</h2>
+                                <h4>• The defending asset (Capital, Town, or FOB) is within 1000 blocks of your home capital and you have previously tried to make them leave.</h3>
+                                
+                                <h1 style="text-decoration: underline;">Restoration</h1>
+                                <h1 style="color: gold;">7 days notice</h1>
+                                <h2>The act of reclaiming a destroyed or abandoned town.</h2>
+                                <h4>• If a ruined town has been untouched for two weeks a nearby nation may take it over and claim it as their own land.</h3>
+                                <h4>• The ruined town is within 700 blocks of your nation.</h3>
+                                
+                                <h1 style="text-decoration: underline;">Retribution</h1>
+                                <h1 style="color: gold;">3 days notice</h1>
+                                <h2>Revenge for another nation or your own.</h2>
+                                <h4>• The nation has wronged or challenged an ally or yourself. example: they have sent threats, attacked people, or kidnapped animals of your nation or allies. (Not limited to this list!  These are examples.)</h3>
+
+                                <h1 style="text-decoration: underline;">Counter-siege</h1>
+                                <h1 style="color: gold;">2 hour timer</h1>
+                                <h2>An act of revenge against an attack.</h2>
+                                <h4>For 2 hours after your nation has been attacked you may immediately siege their nation.</h3>
+                                
+                                <h1 style="text-decoration: underline;">Call of Arms</h1>
+                                <h2>The act of requesting an ally to assist in a war.</h2>
+                                <h2>• 1 You may only call upon one allied nation per attack.</h4>
+                                <h2>• 2 You MUST declare that a nation is joining your attack in #Wars on the Discord.</h4>
+
+                                <h1 style="text-decoration: underline;">Summary</h1>
+                                <h2>(This is essentially a "TLDR" section.)</h2>
+                                <h4>To declare a war, you need to have a valid reasoning and give a warning before hand, after that you are ready to prepare for the on-coming war once the date arrives!</h3>
+                                <h2>Now you are ready for your conquest across the world.  Good Luck!</h1> 
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+                
             </div>
             
         </main>

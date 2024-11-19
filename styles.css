@@ -15,6 +15,19 @@
     background-position: top;
 }
 
+.rules-html-styles {
+    background: url("images_webp/backgrounds/rules-background.webp") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.war-html-styles {
+    background: url("images_webp/backgrounds/rules-background.webp") no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+
 body {
     font-family: Minecraftia;
     margin: 0rem;
@@ -307,4 +320,148 @@ div.scroll-container img {
 .spooky div {
     display: flex;
     flex-direction: column;
+}
+
+.rules {
+    display: flex;
+    justify-content: center;
+}
+
+.rules-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 40vw;
+    gap: 1rem;
+}
+
+.rules-panel h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 4rem;
+}
+
+.rules-panel h3 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.page-title {
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+}
+
+.rules-extrainfo {
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 70, 70);
+    gap: 1rem;
+}
+
+.rules-extrainfo h3 {
+    text-align: center;
+}
+
+.rules-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.war-panel {
+    flex-direction: column;
+    width: 25%;
+    gap: 1rem;
+    justify-content: left;
+    margin: 2%;
+}
+
+.war-panel img {
+    padding-top: 2rem;
+}
+
+.war-panel h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+.war-panel h2 {
+    color: gold;
+    font-size: 3rem;
+}
+
+.war-panel h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.war-panels {
+    display: flex;
+    justify-content: center;
+}
+
+.sieges-and-wars, .towns-and-capitals, .casus-belli {
+    color: white;
+    display: none;
+    justify-content: center;
+}
+
+.war-more-info-buttons, .war-more-info-text{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* .war-more-info-text */
+
+.war-more-info .war-more-info-buttons button {
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    font-family: Minecraftia;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.war-text-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+}
+
+.war-text-panel h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.war-text-panel h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.war-text-panel h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: gold;
+}
+
+.war-text-panel h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(255, 162, 0);
+}
+
+.war-text-panel h5 {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.war-text-panel h6 {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 1rem;
 }
