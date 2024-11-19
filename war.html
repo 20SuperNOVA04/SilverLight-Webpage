@@ -6,41 +6,62 @@
         <title>Silverlight War</title>
 
         <script>
+            window.onload = function() {
+                siegesAndWarFunction();
+            }
+
             function siegesAndWarFunction() {
             var x = document.getElementById("mySAW");
             var y = document.getElementById("myTAC");
             var z = document.getElementById("myCB");
-            if (x.style.display === "none") {
-                x.style.display = "flex";
-                y.style.display = "none";
-                z.style.display = "none";
-                } else {
-                    x.style.display = "none";
-                }
+            var a = document.getElementById("siege-button");
+            var b = document.getElementById("towns-button");
+            var c = document.getElementById("casus-button");
+            x.style.display = "flex";
+            a.style.backgroundColor = "rgb(255,255,255,0.2)";
+            a.style.textDecoration = "none"
+            y.style.display = "none";
+            b.style.backgroundColor = "rgb(255,255,255,0)";
+            b.style.textDecoration = "underline"
+            z.style.display = "none";
+            c.style.backgroundColor = "rgb(255,255,255,0)";
+            c.style.textDecoration = "underline"
             }
+
             function townsAndCapitalsFunction() {
             var x = document.getElementById("mySAW");
             var y = document.getElementById("myTAC");
             var z = document.getElementById("myCB");
-            if (y.style.display === "none") {
-                x.style.display = "none";
-                y.style.display = "flex";
-                z.style.display = "none";
-                } else {
-                    y.style.display = "none";
-                }
+            var a = document.getElementById("siege-button");
+            var b = document.getElementById("towns-button");
+            var c = document.getElementById("casus-button");
+            x.style.display = "none";
+            a.style.backgroundColor = "rgb(255,255,255,0)";
+            a.style.textDecoration = "underline"
+            y.style.display = "flex";
+            b.style.backgroundColor = "rgb(255,255,255,0.2)";
+            b.style.textDecoration = "none"
+            z.style.display = "none";
+            c.style.backgroundColor = "rgb(255,255,255,0)";
+            c.style.textDecoration = "underline"
             }
+
             function casusBelliFunction() {
             var x = document.getElementById("mySAW");
             var y = document.getElementById("myTAC");
             var z = document.getElementById("myCB");
-            if (z.style.display === "none") {
-                x.style.display = "none";
-                y.style.display = "none";
-                z.style.display = "flex";
-                } else {
-                    z.style.display = "none";
-                }
+            var a = document.getElementById("siege-button");
+            var b = document.getElementById("towns-button");
+            var c = document.getElementById("casus-button");
+            x.style.display = "none";
+            a.style.backgroundColor = "rgb(255,255,255,0)";
+            a.style.textDecoration = "underline"
+            y.style.display = "none";
+            b.style.backgroundColor = "rgb(255,255,255,0)";
+            b.style.textDecoration = "underline"
+            z.style.display = "flex";
+            c.style.backgroundColor = "rgb(255,255,255,0.2)";
+            c.style.textDecoration = "none"
             }
             </script>
 
@@ -90,9 +111,9 @@
                 </div>
                 <div class = "war-more-info">
                     <div class = "war-more-info-buttons">
-                        <button onclick="siegesAndWarFunction()"><h1>Sieges/War</h1></button>
-                        <button onclick="townsAndCapitalsFunction()"><h1>Towns and Capitals</h1></button>
-                        <button onclick="casusBelliFunction()"><h1>Casus Belli</h1></button>
+                        <button onclick="siegesAndWarFunction()" id = "siege-button"><h1>Sieges/War</h1></button>
+                        <button onclick="townsAndCapitalsFunction()" id = "towns-button"><h1>Towns and Capitals</h1></button>
+                        <button onclick="casusBelliFunction()" id = "casus-button"><h1>Casus Belli</h1></button>
                     </div>
                     <div class = "war-more-info-text">
                         <div id = "mySAW", class = "sieges-and-wars">

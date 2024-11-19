@@ -312,7 +312,7 @@ div.scroll-container img {
 .extra-right, .extra-left {
     flex-direction: column;
     width: 40%;
-    padding: 4rem;
+    padding: 2rem;
     gap: 0.5rem;
 }
 
@@ -432,6 +432,11 @@ div.scroll-container img {
     justify-content: center;
     gap: 3rem;
     
+}
+
+.war-more-info-buttons button {
+    padding: 0rem 1rem 0rem 1rem;
+    border-radius: 1rem;
 }
 
 /* .war-more-info-text */
