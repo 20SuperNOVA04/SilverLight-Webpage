@@ -347,7 +347,9 @@ div.scroll-container img {
     justify-content: left;
     flex-wrap: wrap;
     width: 40vw;
-    gap: 1rem;
+    gap: 0rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .rules-panel h2 {
@@ -360,6 +362,7 @@ div.scroll-container img {
     text-align: center;
     color: white;
     font-size: 2rem;
+    margin: 0.7rem;
 }
 
 .page-title {
@@ -392,6 +395,7 @@ div.scroll-container img {
     justify-content: left;
     margin: 2%;
 }
+
 
 .war-panel h1 {
     color: white;
@@ -470,10 +474,18 @@ div.scroll-container img {
     text-align: center;
 }
 
+.war-text-panel h3:nth-child(odd) {
+    color: rgb(255, 228, 77);
+}
+
+.war-text-panel h3:nth-child(even) {
+    color: rgb(206, 148, 0);
+}
+
 .war-text-panel h3 {
     font-size: 2rem;
     text-align: center;
-    color: gold;
+    /* color: gold; */
 }
 
 .war-text-panel h4 {
