@@ -1,6 +1,8 @@
-<html class = "guide-html-styles">
+<!DOCTYPE html>
+<html class = "guide-html-styles" lang = "en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
         <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
         <title>Silverlight Guide</title>
@@ -19,11 +21,27 @@
                     <a href = "war.html" style="color: white;">War</a>
                     <a href = "downloads.html" style="color: white;">Downloads</a>
                     <a href = "whitelist.html" style="color: white;">Whitelist</a>
+                    <button onclick="changeFont()" class = "nav-button">Change Font</button>
+                    <script>
+                        var r = document.querySelector(':root');
+                        var rs = getComputedStyle(r);
 
+                        function changeFont() {
+                            if (rs.getPropertyValue('--desired-font') === "Arial") {
+                                r.style.setProperty('--desired-font', 'Pixelify Sans')
+
+                            } else {
+                                r.style.setProperty('--desired-font', 'Arial')
+                            }
+                        }
+                    </script>
                     <a href = "https://sites.google.com/view/silverlight7/home" style="color: white;">Ava's Site :D</a>
                 </div>
             </nav>
         </header>
+        <div class = "back-to-top">
+            <a href="#top">»</a>
+        </div>
         <main>
             <div class = "main-title">
                 <img class = "title-image" src = "images_webp/silverlightseason7.webp" alt = "Silver Light Season 7">
@@ -34,7 +52,7 @@
                 <h2>This is an assortment of new, important bits of information you should look out for! It won't cover every new detail, but that's because the rest is for you to discover.</h2>
 
                 <div class  = "info-panel">
-                    <img src = "images_webp/generalassets/sinkingboat.webp">
+                    <a href = "https://modrinth.com/mod/unseaworthy" target = "_blank"><img src = "images_webp/generalassets/sinkingboat.webp"></a>
                     <div>
                         <h2 style="color: cyan;">Unseaworthy</h2>
                         <h3>Normal boats will no longer work in any location deeper than a river!  To combat this change you will want to use a larger vessel like a Drakkar or a Brigg!</h3>
@@ -69,7 +87,7 @@
                     </div>
                     <div>
                         <h2 style="color: gold;">Illagers and Pillagers!</h2>
-                        <img src = "images_webp\generalassets\Illagers&Pillagers.webp">
+                        <a href = "https://modrinth.com/mod/illager-invasion" target = "_blank"><img src = "images_webp\generalassets\Illagers&Pillagers.webp"></a>
                     </div>
                     
                 </div>
@@ -84,31 +102,31 @@
                         <div class = "dropdown">
                             <button class = "droptn">Archer</button>
                             <div class = "dropdown-content">
-                                <img src = "images_webp\generalassets\classes\archer.webp">
+                                <a href = "https://modrinth.com/mod/archers" target = "_blank"><img src = "images_webp\generalassets\classes\archer.webp"></a>
                             </div>
                         </div>
                         <div class = "dropdown">
                             <button class = "droptn">Paladin</button>
                             <div class = "dropdown-content">
-                                <img src = "images_webp/generalassets/classes/paladin.webp">
+                                <a href = "https://modrinth.com/mod/paladins-and-priests" target = "_blank"><img src = "images_webp/generalassets/classes/paladin.webp"></a>
                             </div>
                         </div>
                         <div class = "dropdown">
                             <button class = "droptn">Priest</button>
                             <div class = "dropdown-content">
-                                <img src = "images_webp\generalassets\classes\priest.webp">
+                                <a href = "https://modrinth.com/mod/paladins-and-priests" target = "_blank"><img src = "images_webp\generalassets\classes\priest.webp"></a>
                             </div>
                         </div>
                         <div class = "dropdown">
                             <button class = "droptn">Warrior</button>
                             <div class = "dropdown-content">
-                                <img src = "images_webp\generalassets\classes\warrior.webp">
+                                <a href = "https://modrinth.com/mod/rogues-and-warriors" target = "_blank"><img src = "images_webp\generalassets\classes\warrior.webp"></a>
                             </div>
                         </div>
                         <div class = "dropdown">
                             <button class = "droptn">Rogue</button>
                             <div class = "dropdown-content">
-                                <img src = "images_webp\generalassets\classes\rogue.webp">
+                                <a href = "https://modrinth.com/mod/rogues-and-warriors" target = "_blank"><img src = "images_webp\generalassets\classes\rogue.webp"></a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +138,7 @@
                     <h3>Bookshelves can take place form further away and go through some blocks, allowing for better decoration!</h3>
                     <h3>Sharpness, Fire Aspect, Protection, and other tedious or daunting enchantments have been <span style="color: rgb(251, 144, 165);">removed</span> and replaced with new ones!</h3>
                     <h3>Finally, the <span style="color: rgb(191, 143, 214);">Enchanting Workstation!</span> This powerful block acts like a child between the enchantment table and an anvil, being able to combine, split, extract, and even upgrade enchantment books!</h3>
-                    <img src = "images_webp\generalassets\wanderingtrader.webp">
+                    <a href = "https://modrinth.com/mod/enchanting-reimagined" target = "_blank"><img src = "images_webp\generalassets\wanderingtrader.webp"></a>
                 </div>
                 <div class = "extra-info">
                     <div class = "extra-left info-panel">
@@ -128,8 +146,8 @@
                         <h3>Combat has had a few tweak and additions to spice up the season!  The changes will affect PvP and PvE, and will make your life a little more challenging, but also very rewarding.</h3>
                         <h2 class = "highlighted-h2">Reviving</h2>
                         <h3>Players can now be revived when slain!  When you die you will have 90 seconds to be saved by another player, if your timer runs out before someone can rescue you then you will die!</h3>
-                        <img src = "images_webp\generalassets\waitingforrevive.webp">
-                        <img src = "images_webp\generalassets\postrevivedebuffs.webp">
+                        <a href = "https://modrinth.com/mod/hardcore-revival" target = "_blank"><img src = "images_webp\generalassets\waitingforrevive.webp"></a>
+                        <a href = "https://modrinth.com/mod/hardcore-revival" target = "_blank"><img src = "images_webp\generalassets\postrevivedebuffs.webp"></a>
                         <h3>Dying too many times within a short period of time (2 within 40 seconds) will result in instant death, you will also instantly die if you are exploded or die to any fire/lava source!</h3>
                         <h3>When you are revived you will receive weakness and hunger, and will be set to half a heart.</h3>
                         <h2 class = "highlighted-h2">Rolling</h2>
@@ -142,7 +160,7 @@
                         <h3>You now have an extra slot you can easily switch to!  This item slot is accessed with a keybind, and can be a quick way to switch to a special item when in need.</h3>
                         <h2 class = "highlighted-h2">Villager Cycling</h2>
                         <h3>Villagers will now periodically swap to new trades, meaning having large slave halls with each possible book is no longer a viable stratgey.  You can still re-roll villagers manually, but it is a much smarter idea to just let them roam free with each other and access all trades at once with a "Trading Post", a block that allows you to access all villager trades nearby you in one spot!</h3>
-                        <img src = "images_webp\generalassets\villagertrading.webp">
+                        <a href = "https://modrinth.com/mod/trading-post" target = "_blank"><img src = "images_webp\generalassets\villagertrading.webp"></a>
                         <h2 class = "highlighted-h2">Removed Items</h2>
                         <h3>Many items have been removed for the sake of balancing and theming (mainly balancing). </h3>
                         <h3>Enderpearls:  Enderpearls may still be obtained, but are now purely for crafting and are impossible to throw.</h3>

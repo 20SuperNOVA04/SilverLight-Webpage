@@ -1,6 +1,7 @@
 <html class = "war-html-styles">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
         <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
         <title>Silverlight War</title>
@@ -63,6 +64,17 @@
             c.style.backgroundColor = "rgb(255,255,255,0.2)";
             c.style.textDecoration = "none"
             }
+            var r = document.querySelector(':root');
+            var rs = getComputedStyle(r);
+
+            function changeFont() {
+                if (rs.getPropertyValue('--desired-font') === "Arial") {
+                    r.style.setProperty('--desired-font', 'Pixelify Sans')
+
+                } else {
+                    r.style.setProperty('--desired-font', 'Arial')
+                }
+            }
             </script>
 
     </head>
@@ -80,10 +92,14 @@
                     <a href = "war.html" style="color: white;">War</a>
                     <a href = "downloads.html" style="color: white;">Downloads</a>
                     <a href = "whitelist.html" style="color: white;">Whitelist</a>
+                    <button onclick="changeFont()" class = "nav-button">Change Font</button>
                     <a href = "https://sites.google.com/view/silverlight7/home" style="color: white;">Ava's Site :D</a>
                 </div>
             </nav>
         </header>
+        <div class = "back-to-top">
+            <a href="#top">»</a>
+        </div>
         <main>
             <div class = "main-title">
                 <img class = "title-image" src = "images_webp/silverlightseason7.webp" alt = "Silver Light Season 7">
