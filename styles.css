@@ -38,6 +38,12 @@
     background-size: cover;
 }
 
+.credits-html-styles {
+    background: url("images_webp/backgrounds/whitelist.webp") no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
 body {
     font-family: var(--desired-font);
     margin: 0rem;
@@ -341,7 +347,7 @@ div.scroll-container img {
 }
 
 .enchanting-overview img{
-    width: fit-content;
+    height: fit-content;
     max-width: 60vw;
     max-height: 50vh;
 }
@@ -641,4 +647,37 @@ div.scroll-container img {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 4rem;
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center ;
+}
+
+.credits h1 {
+    font-size: 4rem;
+}
+
+.credits h2 {
+    font-size: 2rem;
+}
+
+.credits-devs {
+    flex-direction: column;
+    width: 40%;
+    gap: 0rem;
+}
+
+.credits-testers {
+    flex-direction: column;
+    width: 40%;
+    gap: 0rem;
+}
+
+.credits-arts {
+    flex-direction: column;
+    width: 40%;
+    gap: 0rem;
 }
