@@ -39,7 +39,7 @@
 }
 
 .credits-html-styles {
-    background: url("images_webp/backgrounds/whitelist.webp") no-repeat;
+    background: url("images_webp/backgrounds/credits.webp") no-repeat;
     background-position: top;
     background-size: cover;
 }
@@ -47,6 +47,7 @@
 body {
     font-family: var(--desired-font);
     margin: 0rem;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 main {
@@ -472,7 +473,7 @@ div.scroll-container img {
     justify-content: center;
 }
 
-.towns-and-capitals, .casus-belli {
+.towns-and-capitals, .casus-belli, .walls-def-advice {
     color: white;
     display: none;
     justify-content: center;
@@ -680,4 +681,9 @@ div.scroll-container img {
     flex-direction: column;
     width: 40%;
     gap: 0rem;
+}
+
+.law-of-war {
+    display: flex;
+    justify-content: center;
 }

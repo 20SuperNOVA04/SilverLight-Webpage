@@ -12,58 +12,98 @@
             }
 
             function siegesAndWarFunction() {
-            var x = document.getElementById("mySAW");
-            var y = document.getElementById("myTAC");
-            var z = document.getElementById("myCB");
-            var a = document.getElementById("siege-button");
-            var b = document.getElementById("towns-button");
-            var c = document.getElementById("casus-button");
-            x.style.display = "flex";
-            a.style.backgroundColor = "rgb(255,255,255,0.2)";
-            a.style.textDecoration = "none"
-            y.style.display = "none";
-            b.style.backgroundColor = "rgb(255,255,255,0)";
-            b.style.textDecoration = "underline"
-            z.style.display = "none";
-            c.style.backgroundColor = "rgb(255,255,255,0)";
-            c.style.textDecoration = "underline"
+                var w  = document.getElementById("myWDA");
+                var x = document.getElementById("mySAW");
+                var y = document.getElementById("myTAC");
+                var z = document.getElementById("myCB");
+                var a = document.getElementById("siege-button");
+                var b = document.getElementById("towns-button");
+                var c = document.getElementById("casus-button");
+                var d = document.getElementById("advice-button");
+                x.style.display = "flex";
+                a.style.backgroundColor = "rgb(255,255,255,0.2)";
+                a.style.textDecoration = "underline"
+                y.style.display = "none";
+                b.style.backgroundColor = "rgb(255,255,255,0)";
+                b.style.textDecoration = "none"
+                z.style.display = "none";
+                c.style.backgroundColor = "rgb(255,255,255,0)";
+                c.style.textDecoration = "none"
+                w.style.display = "none";
+                d.style.backgroundColor = "rgb(255,255,255,0)";
+                d.style.textDecoration = "none"
             }
 
             function townsAndCapitalsFunction() {
-            var x = document.getElementById("mySAW");
-            var y = document.getElementById("myTAC");
-            var z = document.getElementById("myCB");
-            var a = document.getElementById("siege-button");
-            var b = document.getElementById("towns-button");
-            var c = document.getElementById("casus-button");
-            x.style.display = "none";
-            a.style.backgroundColor = "rgb(255,255,255,0)";
-            a.style.textDecoration = "underline"
-            y.style.display = "flex";
-            b.style.backgroundColor = "rgb(255,255,255,0.2)";
-            b.style.textDecoration = "none"
-            z.style.display = "none";
-            c.style.backgroundColor = "rgb(255,255,255,0)";
-            c.style.textDecoration = "underline"
+                var w  = document.getElementById("myWDA");
+                var x = document.getElementById("mySAW");
+                var y = document.getElementById("myTAC");
+                var z = document.getElementById("myCB");
+                var a = document.getElementById("siege-button");
+                var b = document.getElementById("towns-button");
+                var c = document.getElementById("casus-button");
+                var d = document.getElementById("advice-button");
+                x.style.display = "none";
+                a.style.backgroundColor = "rgb(255,255,255,0)";
+                a.style.textDecoration = "none"
+                y.style.display = "flex";
+                b.style.backgroundColor = "rgb(255,255,255,0.2)";
+                b.style.textDecoration = "underline"
+                z.style.display = "none";
+                c.style.backgroundColor = "rgb(255,255,255,0)";
+                c.style.textDecoration = "none"
+                w.style.display = "none";
+                d.style.backgroundColor = "rgb(255,255,255,0)";
+                d.style.textDecoration = "none"
             }
 
             function casusBelliFunction() {
-            var x = document.getElementById("mySAW");
-            var y = document.getElementById("myTAC");
-            var z = document.getElementById("myCB");
-            var a = document.getElementById("siege-button");
-            var b = document.getElementById("towns-button");
-            var c = document.getElementById("casus-button");
-            x.style.display = "none";
-            a.style.backgroundColor = "rgb(255,255,255,0)";
-            a.style.textDecoration = "underline"
-            y.style.display = "none";
-            b.style.backgroundColor = "rgb(255,255,255,0)";
-            b.style.textDecoration = "underline"
-            z.style.display = "flex";
-            c.style.backgroundColor = "rgb(255,255,255,0.2)";
-            c.style.textDecoration = "none"
+                var w  = document.getElementById("myWDA");
+                var x = document.getElementById("mySAW");
+                var y = document.getElementById("myTAC");
+                var z = document.getElementById("myCB");
+                var a = document.getElementById("siege-button");
+                var b = document.getElementById("towns-button");
+                var c = document.getElementById("casus-button");
+                var d = document.getElementById("advice-button");
+                x.style.display = "none";
+                a.style.backgroundColor = "rgb(255,255,255,0)";
+                a.style.textDecoration = "none"
+                y.style.display = "none";
+                b.style.backgroundColor = "rgb(255,255,255,0)";
+                b.style.textDecoration = "none"
+                z.style.display = "flex";
+                c.style.backgroundColor = "rgb(255,255,255,0.2)";
+                c.style.textDecoration = "underline"
+                w.style.display = "none";
+                d.style.backgroundColor = "rgb(255,255,255,0)";
+                d.style.textDecoration = "none"
             }
+
+            function wallDefAdviceFunction() {
+                var w  = document.getElementById("myWDA");
+                var x = document.getElementById("mySAW");
+                var y = document.getElementById("myTAC");
+                var z = document.getElementById("myCB");
+                var a = document.getElementById("siege-button");
+                var b = document.getElementById("towns-button");
+                var c = document.getElementById("casus-button");
+                var d = document.getElementById("advice-button");
+                x.style.display = "none";
+                a.style.backgroundColor = "rgb(255,255,255,0)";
+                a.style.textDecoration = "none"
+                y.style.display = "none";
+                b.style.backgroundColor = "rgb(255,255,255,0)";
+                b.style.textDecoration = "none"
+                z.style.display = "none";
+                c.style.backgroundColor = "rgb(255,255,255,0.2)";
+                c.style.textDecoration = "none"
+                w.style.display = "flex";
+                d.style.backgroundColor = "rgb(255,255,255,0)";
+                d.style.textDecoration = "underline"
+            }
+
+
             var r = document.querySelector(':root');
             var rs = getComputedStyle(r);
 
@@ -125,11 +165,27 @@
                         <h3>Using powerful cannons, you blow through their defenses, slay their people, and activate their <span style="color: purple;">Desolater</span>, deleting their spawnpoint and securing your victory!</h3>
                     </div>
                 </div>
+                <div class = "law-of-war">
+                    <div class = "war-text-panel info-panel">
+                        <h1>Law of War</h1>
+                        <h3>Thy shall <span style="color: red;">not</span> tower, ladder, nor rope over a nations walls.</h5>
+                        <h3>None will set a new respawn after the activation of ones <span style="color: purple;">Desolater</span>.</h3>
+                        <h3>Nations <span style="color: red;">can not</span> receive help from multiple allegiances at once during an attack, but may during a defense.</h4>
+                        <h3>None shall intentionally demolish or burn a nations building unless it is needed to access loot, only walls may be felled.</h3>
+                        <h3>None shall move the Nations <span style="color: rgb(36, 167, 219);">Honor</span> to a location that is physically inaccessible or hidden.</h3>
+                        <h3>None shall launch an attack before the weeks end <span style="color: red;">unless</span> it is agreed upon by both parties of the war.</h3>
+                        <h3>One <span style="color: red;">must</span> have a logical or fair reasoning for declaring a war, be mature.</h3>
+                        <h3>You may only launch a war according to the cooldown of the attack. [Example: Conquest:  Four days notice.  You may not launch your attack before the four days, and after the fifth day you must declare notice again. (acceptations can be made with staff)]</h3>
+                        <h3>Good luck commander, follow these guidelines to a tee and the light shall side by you.</h3>
+                        <h3>No matter what though, the defending party must be warned ahead of time!</h3>
+                    </div>
+                </div>
                 <div class = "war-more-info">
                     <div class = "war-more-info-buttons">
                         <button onclick="siegesAndWarFunction()" id = "siege-button"><h1>Sieges/War</h1></button>
                         <button onclick="townsAndCapitalsFunction()" id = "towns-button"><h1>Towns and Capitals</h1></button>
                         <button onclick="casusBelliFunction()" id = "casus-button"><h1>Casus Belli</h1></button>
+                        <button onclick="wallDefAdviceFunction()" id = "advice-button"><h1>Castles</h1></button>
                     </div>
                     <div class = "war-more-info-text">
                         <div id = "mySAW", class = "sieges-and-wars">
@@ -185,20 +241,22 @@
                                 <h3>These three structure types have great importance to stability and safety to their empire!</h3>
                                 <h1>Town Hall.</h1>
                                 <h3>"Capitals" are the hearts of your nation!  This is your main center point, and what you should aim to defend the most!  The reason you should protect these structures dearly is because they contain your <span style="color: cyan;">"Nation's Honor"</span>.</h3>
+                                
                                 <h1>No honor. No glory.</h1>
                                 <h3>Your <span style="color: cyan;">Nation's Honor</span> is a physical item that resigns in your national capital!</h3>
                                 <h3>If this item is captured or destroyed by a foreign nation, your nation is disbanded and all of your assets are converted to the attacking kingdom's property.</h3>
                                 <h6 style="color: yellow;">Congrats!  You have found the hidden message. In order to claim that you have thoroughly read the war rules, please message @AvaAsUsual the word "pineapple".</h6>
                                 <h6 style="color: yellow;">(Please do not share this information with your friends as it could potentially cause them to make a bannable mistake.)</h6>
+                                
                                 <h1>Man the deck!</h1>
                                 <h3>The best way to defend your capital aside from physical defenses is a Town!</h3>
                                 <h3>Towns act as a barrier for capitals, if your nation owns a town your capital cannot be attacked until that town is taken over or disbanded!</h3>
                                 <h3>This is not all that Towns are good for though, they are also one of the only ways to set a spawnpoint outside of your capital during a war!</h3>
                                 <h3>This also means that they contain a <span style="color: purple;">"Desolater"</span>. . .</h3>
-                                <!-- <h1>Desolator..? <span style="text-decoration: line-through;">That's not a word</span> I love those!!</h1> -->
-                                <h1>Means to an End</h1>
+                                
+                                <h1>Means to an End..</h1>
                                 <h3>A <span style="color: purple;">desolater</span> is the main target of your enemies in a war.</h3>
-                                <h3>If a <span style="color: purple;">Desolater</span> is activated all spawnpoints of a nation will be set back to their capital!</h3>
+                                <h3>If a <span style="color: purple;">Desolater</span> is activated <span style="text-decoration: underline;">all spawnpoints of a nation</span> will be set back to their capital, meaning that you now only have one life left until you can no longer respawn and help defend your town!</h3>
                                 <h3>This also means that beds no longer set your spawnpoint, you must set it at your nations capital, FOB, or at a town!</h3>
                             </div>
                         </div>
@@ -228,13 +286,34 @@
                                 
                                 <h1 style="text-decoration: underline;">Call of Arms</h1>
                                 <h2>The act of requesting an ally to assist in a war.</h2>
-                                <h2>• 1 You may only call upon one allied nation per attack.</h4>
-                                <h2>• 2 You MUST declare that a nation is joining your attack in #Wars on the Discord.</h4>
+                                <h3>• 1 You may only call upon one allied nation per attack.</h4>
+                                <h3>• 2 You MUST declare that a nation is joining your attack in #Wars on the Discord.</h4>
 
                                 <h1 style="text-decoration: underline;">Summary</h1>
                                 <h2>(This is essentially a "TLDR" section.)</h2>
                                 <h4>To declare a war, you need to have a valid reasoning and give a warning before hand, after that you are ready to prepare for the on-coming war once the date arrives!</h3>
                                 <h2>Now you are ready for your conquest across the world.  Good Luck!</h1> 
+                            </div>
+                        </div>
+                        <div id = "myWDA", class = "walls-def-advice">
+                            <div class = "war-text-panel info-panel">
+                                <h1 style="text-decoration: underline;">Walls, Defenses, and Advice</h1>
+
+                                <h1>Impenetrable.</h1>
+                                <h3>Castle Bricks are a new block designed to act as a land claim in a more vanilla style!</h3>
+                                <h3>These walls can be carved using a "trowel", made with a diamond block and stick.</h3>
+                                <h3>Castle Bricks are like any normal block, but have a unique property where they are only minable by the owner of the block, any other attempt will be met with the strength of bedrock!  The "owner" of the block is simply the one who carved it using the trowel.</h3>
+
+                                <h1>Cannons, Bamboo Spikes, Lumisene oh my!</h1>
+                                <h3>Cannons are not only good for felling defenses, but are also useful for defending your home!  You can easily aim these blocks of destruction at your enemy and fire at will.</h3>
+                                <h3>Bamboo spikes are a new trap defense, acting similar to sweet berry bushes.  These new items can be laced with toxics such as poison, weakness, and more!</h3>
+                                <h3>Lumisene is a special liquid that acts as a flammable tar, any player or entity that makes contact with it will receive the "flammable" effect, this effect <span style="color: red;">removes fire resistance</span> and will cause the entity to spread fire around itself if caught on fire.</h3>
+
+                                <h1>Think.. inside the box?</h1>
+                                <h3>Castle walls are amazing defenses, but they can only protect what they cover, so be sure to cover the foundation of your nation with them as well, or else the enemy can simply dig underneath your defenses!</h3>
+                                <h3>You should also be sure to make your walls tall,  and have a means of upper defense!  Archer posts, thickened structures, keep in mind that you cannot hold off the enemy just from doing nothing.</h3>
+                                <h3>Lay traps, as discussed in the previous section these can prove very deadly, especially with the lack of the protection enchantment!</h3>
+                                <h3>Hopefully you found this useful!  Good luck on your next defense general.</h3>
                             </div>
                         </div>
                     </div>                    
