@@ -24,6 +24,11 @@
                     <a href="credits.html" style="color: white;">Credits</a>
                     <button onclick="changeFont()" class = "nav-button">Change Font</button>
                     <script>
+                        function playMusic(){
+                            var music = new Audio('sounds/honk-sound.mp3');
+                            music.play();
+                            }
+
                         var r = document.querySelector(':root');
                         var rs = getComputedStyle(r);
 
@@ -72,6 +77,9 @@
                     <h2>Chloe (ChloeRainCandy)</h2>
                     <h2>Voindex (.Voindex.)</h2>
                 </div>
+            </div>
+            <div class = "honk-sound">
+                <input type="button" value="????" onclick="playMusic()" />
             </div>
             
         </main>
