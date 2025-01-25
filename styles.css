@@ -553,6 +553,7 @@ div.scroll-container img {
 
 .downloads {
     display: flex;
+    align-items: baseline;
     justify-content: space-evenly;
     margin-bottom: 15rem;
 }
@@ -707,4 +708,16 @@ div.scroll-container img {
 
 .honk-sound input:hover {
     text-decoration: underline;
+}
+
+.downinstructions {
+    text-align: center;
+    padding-top: 0.5rem;
+    background-color: #00000038;
+    border-radius: 1rem;
+}
+
+.downinstructions h3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
